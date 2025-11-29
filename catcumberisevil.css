@@ -1,0 +1,766 @@
+@import url('https://fonts.cdnfonts.com/css/winter-bumble');
+@import url('https://fonts.cdnfonts.com/css/winter-drink');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.cdnfonts.com/css/the-one-jenny-made');
+
+
+@font-face {
+  font-family: alyssa kayla;
+  src: url('https://raw.githubusercontent.com/mooonlight11/fonts/main/Alyssa_Kayla.ttf') format('truetype');
+}
+@font-face {
+font-family: vividly;
+src: url('https://raw.githubusercontent.com/chloe-tseng/chloe-fonts/main/vividly-regular-webfont.woff2') format('woff2'),
+}
+@font-face {
+font-family: autumn;
+src: url('https://raw.githubusercontent.com/mooonlight11/fonts/main/Autumn Dingbats.ttf') format('truetype');
+}
+@font-face {
+font-family: vegetable;
+src: url('https://raw.githubusercontent.com/mooonlight11/fonts/main/Vegetables.ttf') format('truetype');
+}
+
+@font-face {
+font-family: airplane;
+src: url('https://raw.githubusercontent.com/mooonlight11/fonts/main/airplane.ttf') format('truetype');
+}
+
+@font-face {
+font-family: hibiscus;
+src: url('https://raw.githubusercontent.com/mooonlight11/fonts/main/Hibiscus.ttf') format('truetype');
+}
+
+a.blog-edit-post, .blog-edit-post {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    width: auto !important;
+    pointer-events: auto !important;
+}
+
+
+/** 🌷 ROOT VARIABLES **/
+:root {
+  --main: #5a968f;        /* sea-glass greenish blue */
+  --light: #b8dcd8;       /* pale mint frost */
+  --link: #3b6f69;        /* darker teal for links */
+  --display: #4c8e86;     /* accent — medium aqua */
+  --background: #e1f3f1;  /* misty blue-green snow */
+  --body: #26615f;
+  --font: winter drink;
+  --title: vividly;
+}
+
+
+
+
+/** 🌼 GENERAL BODY STYLES **/
+body {
+  font-family: var(--font);
+  color: var(--body);
+  font-size: 20px !important;
+  background-color: var(--background)!important;
+}
+
+h1 {
+  font-family: var(--title);
+  font-size: 30px;
+  text-align: center;
+  color: var(--main) !important;
+}
+
+h2 {
+  font-family: var(--title);
+  font-size: 20px;
+  text-align: center;
+  color: var(--main) !important;
+}
+
+p.description {
+  font-weight: bold;
+}
+
+
+/** 🌸 BLOG POSTS AND COMMENTS **/
+div.entrywrap, 
+div.entrywrap-hover {
+  word-wrap: break-word;
+  border-radius: 14px;
+  background-color: var(--main);
+  border: none;
+  color: white;
+}
+
+div.commentwrap {
+  background-color: var(--background);
+}
+
+
+div.cmty-post-edit-info {
+  display: none !important;
+}
+
+
+
+/** 🌺 PAGE WRAPPER & BACKGROUND **/
+
+#page-wrapper {
+background-image: url(https://cdn.artofproblemsolving.com/attachments/b/9/39ed8324eb5c2b3e10c304ac13d8f3e86e2382.jpg);
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: 100%!important;
+}
+
+
+#wrapper {
+  width: 1000px;
+  background-color: var(--background)!important;
+  opacity: 0.7;
+}
+
+
+/** 🌻 HEADER **/
+#header {
+  content: url("https://cdn.artofproblemsolving.com/attachments/b/d/192bef3893242aab66dca336975fc632a47150.png");
+  border: none;
+  background-attachment: fixed;
+}
+
+#header h1 {
+  font-size: 20px;
+  color: var(--main) !important;
+  font-weight: normal;
+}
+
+/** 🌼 NAVIGATION BAR **/
+#navigation_box {
+  background-color: var(--main);
+  border-bottom: none;
+  padding: 2px;
+  height: 30px;
+  position: fixed;
+  transition: 0.75s;
+}
+
+#navigation_box a {
+  font-family: var(--title);
+  font-size: 18px;
+  color: white!important;
+  padding: 5px;
+  transition: 0.75s;
+}
+
+#navigation_box:hover {
+  background-color: var(--main);
+  border-bottom: none;
+  padding: 2px;
+  position: fixed;
+  transition: 0.75s;
+}
+
+
+/** 🌷 LAYOUT SECTIONS **/
+#side {
+  width: 30%;
+  background-color: var(--background)!important;
+}
+
+#main {
+  width: 70%;
+}
+
+
+/** 🌸 WIDGETS **/
+.widget-header {
+  margin: 10px;
+  background-color: var(--main);
+  font-family: var(--title);
+  border-radius: 10px;
+  text-align: center;
+}
+
+div.widget-content {
+  border-radius: 15px;
+}
+
+fieldset {
+  background-color: var(--background) !important;
+  border: 0;
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+
+
+.aops-icon.blog-delete-shout{
+color: var(--link);
+}
+
+
+/** 🔎 SEARCH **/
+#search-widget > div {
+background-color: transparent;
+}
+ 
+#search-widget fieldset {
+border: none;
+}
+ 
+.widget-settings {
+display: none;
+}
+ 
+.search {
+height: 25px;
+border-radius: 5px;
+font-family: var(--font);
+}
+ 
+.button2 {
+border-radius: 5px;
+width: 200px;
+height: 25px;
+border: none;
+font-family: var(--title);
+background: var(--main);
+color: black;
+}
+
+/** 🐑 TEXTAREA **/
+textarea {
+background-color: var(--light);
+font-family: var(--font);
+color: black; 
+font-size: 28px;
+padding: 8px;
+border-radius: 10px;
+border: none !important;
+}
+
+.cmty-cancel-button[value="Cancel"] {
+font-family: var(--title); 
+background-color: var(--main)!important; 
+color: black !important; 
+border-radius: 5px;
+transition: 0.75s;
+}
+
+.cmty-cancel-button[value="Cancel"]:hover {
+font-family: var(--title); 
+background-color: var(--link) !important; 
+color: black;
+border-radius: 5px;
+}
+
+.cmty-submit-button[value="Submit"] {
+font-family: var(--title); 
+background-color: var(--main) !important; 
+color: black !important; 
+border-radius: 5px;
+transition: 0.75s;
+}
+
+.cmty-submit-button[value="Submit"]:hover {
+font-family: var(--title); 
+background-color: var(--link) !important; 
+color: black;
+border-radius: 5px;
+}
+
+/* preview bar */
+.cmty-posting-preview-bar.clickable {
+   border-radius: 0px 0px 2px 2px;
+   background-color: var(--main);
+   font-family: var(--title);
+   transition: 0.75s;
+}
+
+
+/** 🌺 SHOUTBOX **/
+
+.blog-shout {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+
+li.row1 {
+background-color: var(--main);
+color: var(--background);
+align: right;
+}
+
+li.row2 {
+background-color: var(--main);
+color: var(--background);
+align: right;
+}
+
+
+/** 🌻 INPUTS & TEXTAREA **/
+textarea {
+  width: 90%;
+  resize: none !important;
+  display: block;
+  margin: auto !important;
+  margin-bottom: 10px !important;
+}
+
+.inputbox {
+  background-image: url('https://cdn.artofproblemsolving.com/attachments/b/9/39ed8324eb5c2b3e10c304ac13d8f3e86e2382.jpg');
+  width: 98% !important;
+  background-size: 100%;
+  font-size: 20px;
+  font-family: var(--title);
+  color: black;
+  border-radius: 7px;
+  transition: 0.5s ease;
+}
+
+
+
+
+
+/** 🌸 CURSOR CUSTOMIZATION BY ZIXY ASK FIRST **/
+div:hover {
+  cursor: url('https://i.ibb.co/whT5ZjyT/molang-blue-foam-pack.png') 16 16, auto;
+}
+
+a {
+  cursor: url('https://i.ibb.co/dsx2fJ5k/molang-in-hawaii-costumes.png') 16 16, auto;
+}
+
+
+
+/** 🌷 HIDDEN ELEMENTS **/
+img.blog-direct-post-link {
+  display: none !important;
+}
+
+a:link{
+color: var(--link)!important;
+text-decoration:none;
+}
+
+a:visited {
+color: var(--link)!important;
+text-decoration:none;
+}
+
+a:username{ 
+color: black!important;
+}
+
+/** 🐌 ARCHIVES **/
+img.month-image[alt='-'] {
+    content: url(https://i.ibb.co/tPQQWdD9/christmas-archive-icon-light.png);
+}
+img.month-image {
+    border-radius: 0px;
+    content: url(https://i.ibb.co/q312rFnN/christmas-archive-icon-dark.png);
+    width: 5%;
+    transform: translate(0px, -1.5px);
+}
+
+/** 🐤 TAG/HIDE/QUOTE/POLL/TIP **/
+.cmty-item-tag {
+background: var(--link) !important;
+color: var(--main) !important;
+font-family: 'vividly';
+}
+
+.cmty-item-tag:hover {
+background: var(--link) !important;
+color: black!important;
+transition: 0.7s;
+}
+
+a.cmty-hide-heading, span.cmty-hide-heading{
+background: var(--light)!important;
+color: var(--black) !important;
+font-family: var(--font);
+font-size: 20px;
+border-radius: 4px; 
+transition: 0.7s;
+}
+
+.cmty-hide-content, .cmty-hide-content:after {
+background-color: var(--light);
+font-family: var(--font);
+font-size: 18px !important;
+color: black !important;
+opacity: 0.9;
+}
+
+a.cmty-hide-heading:hover, span.cmty-hide-heading:hover{
+border-radius: 8px; 
+transition: 0.7s;
+}
+
+.commentwrap .bbcode_quote:before, .commentwrap .bbcode_quote, .commentwrap .bbcode_quote_head, .commentwrap .bbcode_quote:after,
+.commentwrap .cmty-hide-content:before, .commentwrap .cmty-hide-content, .commentwrap .cmty-hide-content:after{
+  background-color: var(--main)!important;
+  color:var(--link)!important;
+  font-size:20px!important;
+}
+
+.cmty-poll-display {
+background: var(--light);
+border: 2px;
+text-color: black;
+border-radius: 5px;
+}
+.cmty-poll-result-bar{
+background-color: var(--main);
+padding: 5px !important;
+border-radius: 2px;
+}
+
+/** DEFAULT CSS REMOVAL **/
+
+div.entry {
+border-bottom: none !important;
+}   
+.cfooter .author img {
+display: none;
+}   
+div.entry h2 img, div.comment h2 img {
+display: none;
+} 
+#post-new-entry-p img {
+display: none;
+}
+::-webkit-scrollbar { 
+display: none;
+}   
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner{
+scrollbar-width: none;
+}  
+.blog-shout-wrapper > .aops-scroll-outer > .aops-scroll-inner::-webkit-scrollbar {
+width: 0px;
+}   
+
+#about-owner-widget ul::before {
+    content: "▪︎ 14 years old\A▪︎ does not enjoy math\A▪︎ loves pumpkins!\A▪︎ enjoys calling elaine an orz emu"; 
+    display: block;
+    white-space: pre-line; /* this makes \A render as line breaks */
+}
+
+
+#about-owner-widget ul li:first-child {
+display: none;
+}
+
+#about-owner-widget ul li:last-child {
+display: none;
+}
+
+
+
+
+
+
+
+
+/** 💕 DISPLAY NAMES **/
+/*admin can change their name; keep the color tho :)*/
+
+a.username-coloured, #contrib-widget a, #shouts-widget a, p.author a, p.author a:hover {
+color: black;
+font-weight: normal;
+}
+
+
+@keyframes green {
+  0% { color: #5a968f; }    /* main teal */
+  10% { color: #6ba9a2; }
+  25% { color: #7cbcb4; }
+  40% { color: #8ecfc6; }
+  55% { color: #a0e2d8; }
+  70% { color: #b3f0e7; }
+  85% { color: #c8f8f1; }
+  100% { color: #5a968f; }  /* back to base */
+}
+
+
+/*MOONLIGHT*/
+a[href="/community/user/953524"]{font-size: 0px}
+a[href="/community/user/953524"]::before{
+font-family: vividly;
+font-size: 25px;
+animation: green 3s linear infinite;
+
+content: "mooonlight"!important;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+a[href="/community/user/953524"]::after {
+font-family: autumn;
+font-size: 18px !important;
+animation: green 3s linear infinite, spin 2s linear infinite;
+display: inline-block;
+content: " D";
+}
+
+/*ELAINE - stop teaming >:(*/
+a[href="/community/user/949431"]{font-size: 0px}
+a[href="/community/user/949431"]::before{
+font-family: vividly;
+font-size: 25px;
+color: var(--display);
+content: "elaine the big at orz emu who came to the zoo"!important;
+}
+a[href="/community/user/949431"]::after {
+font-family: autumn;
+font-size: 25px !important;
+color: var(--display);
+content: "R";
+}
+
+/*LYDIA*/
+a[href="/community/user/1151634"]{font-size: 0px}
+a[href="/community/user/1151634"]::before{
+font-family: vividly;
+font-size: 25px;
+color: var(--display);
+content: "lydia"!important;
+}
+a[href="/community/user/1151634"]::after {
+font-family: autumn;
+font-size: 25px !important;
+color: var(--display);
+content: "R";
+}
+
+/*SQUIDGET*/
+a[href="/community/user/944650"]{font-size: 0px}
+a[href="/community/user/944650"]::before{
+font-family: vividly;
+font-size: 25px;
+color: var(--display);
+content: "squidget"!important;
+}
+a[href="/community/user/944650"]::after {
+font-family: autumn;
+font-size: 25px !important;
+color: var(--display);
+content: "R";
+}
+
+/*ZOYA*/
+a[href="/community/user/988569"]{font-size: 0px}
+a[href="/community/user/988569"]::before{
+font-family: vividly;
+font-size: 25px;
+color: var(--display);
+content: "zoy-zoy"!important;
+}
+a[href="/community/user/988569"]::after {
+font-family: autumn;
+font-size: 25px !important;
+color: var(--display);
+content: "R";
+}
+
+/*GROKR*/
+a[href="/community/user/587733"]{font-size: 0px}
+a[href="/community/user/587733"]::before{
+font-family: handlee;
+font-size: 25px;
+color: var(--display);
+content: "grokr"!important;
+}
+a[href="/community/user/587733"]::after {
+font-family: autumn;
+font-size: 25px !important;
+color: var(--display);
+content: "R";
+}
+
+/*CATCUMBER*/
+a[href="/community/user/1106231"]{font-size: 0px!important}
+a[href="/community/user/1106231"]::before{
+font-family: vividly;
+font-size: 20px!important;
+color: green;
+content: "big fat meanie named catcumber"!important;
+}
+/** wow moonlight you changed my display name so much (sarcasm) 
+alr let's change it more (not sarcasm)**/
+
+a[href="/community/user/1238041"]{font-size: 0px}
+a[href="/community/user/1238041"]::before{
+font-size: 20px;
+content: "kaylee"!important;
+}
+
+
+/*ZOEKWU*/
+a[href="/community/user/1257472"]{font-size: 0px}
+a[href="/community/user/1257472"]::before{
+font-family: vividly;
+font-size: 20px;
+color: black;
+content: "Zoe"!important;
+}
+
+1257472
+
+/*MIDNIGHT*/
+a[href="/community/user/1082747"]{font-size: 0px}
+a[href="/community/user/1082747"]::before{
+font-family: vividly;
+font-size: 20px;
+color: #9cdbd2;
+content: "light green pookie midnight"!important;
+}
+
+
+/*LUCKYLEAF*/
+a[href="/community/user/1160771"]{font-size: 0px}
+a[href="/community/user/1160771"]::before{
+font-family: vividly;
+font-size: 20px;
+color: #468a80;
+content: "luckyleaf"!important;
+}
+a[href="/community/user/1160771"]::after {
+font-family: autumn;
+font-size: 20px !important;
+color: #468a80;
+content: " C";
+}
+
+/*LILO*/
+a[href="/community/user/1147475"]{font-size: 0px}
+a[href="/community/user/1147475"]::before {
+font-family: vividly;
+font-size: 20px;
+color: black;
+content: "lilo"!important;
+}
+
+/*VIVI*/
+a[href="/community/user/1192499"]{font-size: 0px}
+a[href="/community/user/1192499"]::before {
+font-family: vividly;
+font-size: 20px;
+color: black;
+content: "vivi"!important;
+}
+
+/*AIDAN*/
+a[href="/community/user/519740"]{font-size: 0px}
+a[href="/community/user/519740"]::before {
+font-family: vividly;
+font-size: 20px;
+color: black;
+content: "aidan"!important;
+}
+
+/*FREJA*/
+a[href="/community/user/1112498"]{font-size: 0px}
+a[href="/community/user/1112498"]::before {
+font-family: vividly;
+font-size: 20px;
+color: black;
+content: "queen freja 👑"!important;
+}
+
+
+/*POTATO*/
+a[href="/community/user/1036071"]{font-size: 0px}
+a[href="/community/user/1036071"]::before {
+font-family: vividly;
+font-size: 20px;
+color: #6aa39b;
+content: "ze important potato"!important;
+}
+
+/*BOB*/
+a[href="/community/user/1013644"]{font-size: 0px}
+a[href="/community/user/1013644"]::before {
+font-family: vividly;
+font-size: 20px;
+color: #6aa39b;
+content: "bob ze broccoli "!important;
+}
+a[href="/community/user/1013644"]::after {
+font-family: vegetable;
+font-size: 20px !important;
+color: #6aa39b;
+content: "Z";
+}
+
+
+/*PILOT*/
+a[href="/community/user/1072569"]{font-size: 0px}
+a[href="/community/user/1072569"]::before {
+font-family: vividly;
+font-size: 20px;
+color: black;
+content: "pilot"!important;
+}
+a[href="/community/user/1072569"]::after {
+font-family: airplane;
+font-size: 16px !important;
+color: black;
+content: "  N";
+}
+
+/*DORAA*/
+a[href="/community/user/1292761"]{font-size: 0px}
+a[href="/community/user/1292761"]::before {
+font-family: vividly;
+font-size: 20px;
+color: #8fcfc5;
+content: "real life dora!!"!important;
+}
+a[href="/community/user/1292761"]::after {
+font-family: hibiscus;
+font-size: 16px !important;
+color: #8fcfc5;
+content: " m";
+}
+
+
+@keyframes blackgray {
+  0% { color: #000000; }       /* pure black */
+  10% { color: #1a1a1a; }      
+  25% { color: #333333; }      
+  40% { color: #4d4d4d; }      
+  55% { color: #666666; }      
+  70% { color: #808080; }      
+  85% { color: #999999; }      
+  100% { color: #000000; }     /* back to black */
+}
+
+
+/*MP*/
+a[href="/community/user/822859"]{font-size: 0px}
+a[href="/community/user/822859"]::before {
+font-family: vividly;
+font-size: 24px;
+animation: blackgray 0.5s linear infinite!important;
+content: "orzer who admits and will cook on amc10 and aime and make jmo 2026 frfr lock in"!important;
+}
+
+
+@keyframes spinny{
+100% {transform: rotate(360deg)};
+}
+
+div#post-3720325.entry > div.entrywrap:hover{
+animation: spinny 0.5s linear infinite !important;
+}
+div#post-3720325.entry > div.entrywrap{
+font-family: vividly;
+}
