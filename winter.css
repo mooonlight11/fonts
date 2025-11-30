@@ -17,10 +17,10 @@ CREDITS:
 
 @import url('https://fonts.cdnfonts.com/css/winter-bumble');
 @import url('https://fonts.cdnfonts.com/css/winter-drink');
-@import url("https://cdn.statically.io/gh/cucumber-cat/eastereggs/main/main.css");
+/*@import url("https://cdn.statically.io/gh/cucumber-cat/eastereggs/main/main.css");*/
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 @import url('https://fonts.cdnfonts.com/css/the-one-jenny-made');
-@import url("https://cdn.statically.io/gh/cucumber-cat/eastereggs/main/egg.css");
+/*@import url("https://cdn.statically.io/gh/cucumber-cat/eastereggs/main/egg.css");*/
 
 @font-face {
   font-family: alyssa kayla;
@@ -535,7 +535,7 @@ a[href="/community/user/949431"]::before{
 font-family: vividly;
 font-size: 25px;
 color: var(--display);
-content: "elaine the big at orz emu who came to the zoo"!important;
+content: "elaine the big fat orz emu who came to the zoo"!important;
 }
 a[href="/community/user/949431"]::after {
 font-family: autumn;
